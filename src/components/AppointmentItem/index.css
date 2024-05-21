@@ -1,0 +1,33 @@
+/* Write your CSS here */
+.eachAppointmentContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #94959c;
+  border-radius: 11px;
+  width: 263px;
+  margin-bottom: 6px;
+  margin-right: 40px;
+  padding: 2px;
+  overflow: auto;
+}
+
+.titleText {
+  font-family: 'Roboto';
+  font-size: 19px;
+  font-weight: 900;
+  color: rgb(12, 11, 11);
+}
+
+.dateText {
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 400;
+  color: #5e5e61;
+}
+.starBtn {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}

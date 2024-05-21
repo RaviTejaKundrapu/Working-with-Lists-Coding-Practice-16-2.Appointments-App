@@ -1,0 +1,241 @@
+/* Write your CSS here */
+::-webkit-scrollbar {
+  display: none;
+}
+.appContainer {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to bottom, #fbc7d4, #9796f0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.appointmentsContainer {
+  width: 90%;
+  height: 90%;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+}
+.appName {
+  font-family: 'Roboto';
+  font-size: 21px;
+  font-weight: 900;
+  color: #171f46;
+}
+.allInputsContainer {
+  /* border: 1px solid red; */
+  width: 96%;
+  margin: 9px;
+  padding-left: 6px;
+}
+.titleContainer {
+  margin: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.title {
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 900;
+  color: #3f4149;
+}
+.titleInput {
+  width: 220px;
+  height: 33px;
+  border: 1px solid #868aa5;
+  border-radius: 4px;
+  outline: none;
+  margin: 4px;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 900;
+  color: black;
+}
+.dateContainer {
+  margin: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.date {
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 900;
+  color: #3f4149;
+}
+.dateInput {
+  width: 220px;
+  height: 33px;
+  border: 1px solid #868aa5;
+  border-radius: 4px;
+  outline: none;
+  margin: 4px;
+  font-family: 'Roboto';
+  font-size: 13px;
+  font-weight: 500;
+  color: black;
+}
+@media all and (max-width: 766px) {
+  .app-image {
+    display: none;
+  }
+}
+
+.addBtn {
+  width: 53px;
+  height: 30px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: #8b5cf6;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-left: 10px;
+  margin-top: 10px;
+  padding: 3px;
+}
+.line {
+  width: 98%;
+  color: #1d1e20;
+  font-weight: 600;
+}
+.appointmentsHaveContainer {
+  width: 98%;
+  margin-top: 5px;
+  margin-left: 4px;
+  padding-left: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* border: 1px solid red; */
+}
+.tabDetailsDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+  width: 98%;
+  margin: 2px;
+}
+.motoName {
+  font-family: 'Roboto';
+  font-size: 19px;
+  font-weight: 900;
+  color: #171f46;
+  margin: 3px;
+}
+.starredBtn {
+  outline: none;
+  border: 1px solid #5452f4;
+  border-radius: 13px;
+  background-color: transparent;
+  font-family: 'Roboto';
+  font-size: 13px;
+  font-weight: 900;
+  color: #1b17e8;
+  padding: 2px;
+  margin: 2px;
+  width: 80px;
+}
+.enableStarredBtn {
+  background-color: rgb(106, 93, 190);
+  color: white;
+}
+.AppointmentsListContainer {
+  list-style-type: none;
+  margin-top: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; /*change flex-statr to m to xl devices */
+  /* border: 1px solid red; */
+}
+
+@media all and (min-width: 767px) {
+  .app-image {
+    display: visible;
+    width: 450px;
+    height: 310px;
+  }
+  .appName {
+    font-size: 36px;
+  }
+  .allInputsContainer {
+    /* border: 1px solid red; */
+    width: 96%;
+    margin: 9px;
+    padding-left: 6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .titleContainer {
+    margin: 3px;
+    flex-grow: 1;
+  }
+  .title {
+    font-size: 17px;
+  }
+  .titleInput {
+    width: 250px;
+    height: 39px;
+    font-size: 15px;
+  }
+  .dateContainer {
+    margin: 3px;
+    flex-grow: 1;
+  }
+  .date {
+    font-size: 16px;
+  }
+  .dateInput {
+    width: 250px;
+    height: 39px;
+    font-size: 14px;
+  }
+  .addBtn {
+    width: 55px;
+    height: 32px;
+    outline: none;
+    font-size: 15px;
+  }
+  .line {
+    width: 96%;
+  }
+
+  .appointmentsHaveContainer {
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* border: 1px solid red; */
+  }
+  .motoName {
+    font-size: 22px;
+  }
+  .starredBtn {
+    font-size: 15px;
+  }
+  .AppointmentsListContainer {
+    list-style-type: none;
+    margin-top: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 1px solid red; */
+    flex-wrap: wrap;
+  }
+}
